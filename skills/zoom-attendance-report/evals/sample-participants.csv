@@ -1,0 +1,5 @@
+Name (Original Name),User Email,Join Time,Leave Time,Duration (Minutes)
+Alice Smith,alice@example.edu,2026-05-15T09:00:00-04:00,2026-05-15T10:15:00-04:00,75
+Bob Jones,bob@example.edu,2026-05-15T09:12:00-04:00,2026-05-15T10:00:00-04:00,48
+Bob Jones,bob@example.edu,2026-05-15T10:05:00-04:00,2026-05-15T10:15:00-04:00,10
+Carol Lee,carol@example.edu,2026-05-15T09:30:00-04:00,2026-05-15T09:50:00-04:00,20

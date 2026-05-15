@@ -6,7 +6,8 @@ description: >
   late or partial attendance flags, or wants to forward Zoom meeting events to
   1EdTech Caliper or Unizin for LMS analytics. This skill can choose any bundled
   tool underneath it, including attendance reporting and Caliper event
-  forwarding.
+  forwarding. This repo also includes individual skill folders under `skills/`
+  for callers that want narrower entrypoints.
 ---
 
 # Zoom EDU Skills Demo
@@ -17,6 +18,11 @@ Provide multiple EDU-oriented Zoom workflows from one skill entrypoint.
 
 - `scripts/attendance_report.py` for attendance reports from participant exports
 - `scripts/caliper_bridge.py` for forwarding Zoom meeting events to Caliper or Unizin
+
+## Individual Skills
+
+- `skills/zoom-attendance-report/` exposes the attendance workflow as its own skill.
+- `skills/zoom-caliper-bridge/` exposes the Caliper forwarding workflow as its own skill.
 
 ## When to Use
 
