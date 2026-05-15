@@ -1,0 +1,26 @@
+[
+  {
+    "participant_name": "Alice Smith",
+    "participant_email": "alice@example.edu",
+    "join_time": "2026-05-15T09:00:00-04:00",
+    "leave_time": "2026-05-15T10:15:00-04:00"
+  },
+  {
+    "participant_name": "Bob Jones",
+    "participant_email": "bob@example.edu",
+    "join_time": "2026-05-15T09:12:00-04:00",
+    "leave_time": "2026-05-15T10:00:00-04:00"
+  },
+  {
+    "participant_name": "Bob Jones",
+    "participant_email": "bob@example.edu",
+    "join_time": "2026-05-15T10:05:00-04:00",
+    "leave_time": "2026-05-15T10:15:00-04:00"
+  },
+  {
+    "participant_name": "Carol Lee",
+    "participant_email": "carol@example.edu",
+    "join_time": "2026-05-15T09:30:00-04:00",
+    "leave_time": "2026-05-15T09:50:00-04:00"
+  }
+]
