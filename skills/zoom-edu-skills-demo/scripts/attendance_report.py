@@ -3,13 +3,13 @@
 Generate an attendance report from a Zoom participant list.
 
 Examples:
-    python scripts/main.py \
+    python scripts/attendance_report.py \
         --participants-file participants.csv \
         --meeting-title "Biology 101" \
         --meeting-start "2026-05-15T09:00:00-04:00" \
         --meeting-end "2026-05-15T10:15:00-04:00"
 
-    python scripts/main.py \
+    python scripts/attendance_report.py \
         --participants-file participants.json \
         --roster-file roster.csv \
         --expected-duration-minutes 75 \

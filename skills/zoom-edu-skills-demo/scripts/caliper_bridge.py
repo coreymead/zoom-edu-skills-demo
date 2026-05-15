@@ -4,7 +4,7 @@ Zoom-to-Caliper Bridge: Looks up Zoom meeting/user info, maps to a 1EdTech
 Caliper v1p2 SessionEvent envelope, and sends it to a Caliper endpoint.
 
 Usage:
-    python scripts/main.py \
+    python scripts/caliper_bridge.py \
         --meeting-id 97212343366 \
         --user-id PPOMeM9jRi-KwVgcHIGi3A \
         --action LoggedIn \

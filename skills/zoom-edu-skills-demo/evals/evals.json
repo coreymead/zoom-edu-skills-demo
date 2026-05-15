@@ -1,0 +1,55 @@
+{
+  "skill_name": "zoom-edu-skills-demo",
+  "tools": [
+    "attendance_report",
+    "caliper_bridge"
+  ],
+  "evals": [
+    {
+      "id": 1,
+      "tool": "attendance_report",
+      "prompt": "Generate an attendance report from this Zoom participant export for Biology 101. Flag late arrivals and show each student's total minutes attended.",
+      "expected_output": "A structured attendance report with per-participant totals, join and leave times, and late flags.",
+      "files": [
+        "attendance/sample-participants.csv"
+      ]
+    },
+    {
+      "id": 2,
+      "tool": "attendance_report",
+      "prompt": "Compare this Zoom meeting participant list against the attached class roster and tell me who was absent or only partially attended.",
+      "expected_output": "A report that compares attendance against a roster and identifies absent and partial-attendance students.",
+      "files": [
+        "attendance/sample-participants.csv",
+        "attendance/sample-roster.csv"
+      ]
+    },
+    {
+      "id": 3,
+      "tool": "attendance_report",
+      "prompt": "Turn this Zoom attendance JSON into a CSV report for advising hours and include reconnect-aware attendance minutes.",
+      "expected_output": "A CSV attendance report that merges reconnect sessions and reports total minutes per participant.",
+      "files": [
+        "attendance/sample-participants.json"
+      ]
+    },
+    {
+      "id": 4,
+      "tool": "caliper_bridge",
+      "prompt": "Map this Zoom participant join event into a Caliper SessionEvent and send it to our Unizin endpoint.",
+      "expected_output": "A Caliper EventEnvelope containing a SessionEvent for the participant and a request sent to the configured endpoint."
+    },
+    {
+      "id": 5,
+      "tool": "caliper_bridge",
+      "prompt": "Generate the Caliper payload for this Zoom meeting attendance event, but do not send it yet.",
+      "expected_output": "A dry-run Caliper envelope with meeting, user, action, and session metadata rendered for inspection."
+    },
+    {
+      "id": 6,
+      "tool": "caliper_bridge",
+      "prompt": "Forward this Zoom meeting event to Caliper and include LMS and SIS identifiers on the learner.",
+      "expected_output": "A Caliper SessionEvent whose actor contains LMS and SIS system identifiers and is posted to the target endpoint."
+    }
+  ]
+}
